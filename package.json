@@ -1,0 +1,14 @@
+{
+  "name": "Sakil-Node.js-Practice",
+  "version": "1.0.0",
+  "description": "Node.js practice project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}

@@ -2,14 +2,15 @@
   "name": "Sakil-Node.js-Practice",
   "version": "1.0.0",
   "description": "Node.js practice project",
-  "main": "src/index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon Post.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "1.18.4"
   },
   "keywords": []

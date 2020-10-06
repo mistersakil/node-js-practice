@@ -1,16 +1,16 @@
 class PostController{
 	constructor(){
 		this.posts = [
-			{
-				title: 'Default post title',
-				body: 'Default post body',
-				id: 1
-			},
-			{
-				title: 'Default post title 2',
-				body: 'Default post body',
-				id: 2
-			}
+			// {
+			// 	title: 'Default post title',
+			// 	body: 'Default post body',
+			// 	id: 1
+			// },
+			// {
+			// 	title: 'Default post title 2',
+			// 	body: 'Default post body',
+			// 	id: 2
+			// }
 		]
 	}
 

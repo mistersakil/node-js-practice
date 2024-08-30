@@ -1,6 +1,12 @@
 import express from "express";
-import { createReadStream } from "fs"; // Using the standard `fs` module for creating a read stream
+import { createReadStream } from "fs";
+import path from "path";
+import { fileURLToPath } from "url"; // Import necessary functions to work with file URLs
 import monitor from "express-status-monitor";
+
+// Convert `import.meta.url` to a file path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default () => {
   const app = express();
@@ -8,7 +14,11 @@ export default () => {
   const port = process.env.PORT || 3003;
 
   app.get("/", (req, res) => {
-    const filePath = "./example.txt"; // Ensure this path is correct
+    // Resolve the path to example.txt based on the current directory of stream.js
+
+    console.log(__filename);
+
+    const filePath = path.resolve(__dirname, "../example.txt");
 
     // Set the content-type to text/plain with UTF-8 encoding
     res.setHeader("Content-Type", "text/plain; charset=utf-8");
